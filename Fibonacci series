@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() 
+
+{
+int i=3, n, f1=0, f2=1;
+int f3=f1+f2;
+printf("Enter the number of terms: ");
+scanf("%d",&n);
+printf("Fibonacci Series: \n%d\n%d\n",f1,f2);
+while(i<=n)
+ {
+    printf("%d\n",f3);
+    f1 = f2;
+    f2 = f3;
+    f3 =f1+f2;
+    i++;
+  }
+  
+
+  return 0;
+}
